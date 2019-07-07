@@ -1,26 +1,25 @@
 .App {
-  text-align: center;
   background-size: cover;
   background-image: url(./assets/tomahawk.jpg);
-
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
+  flex-direction: column;
+  font-family: Avenir;
+  padding: 25px;
 }
 
-.App-link {
-  color: red;
+.App-Title {
+  text-align: center;
+  font-size: calc(10px + 8vmin);
+  font-weight: bold;
+}
+
+.App-Routes {
+  padding: 20px;
+}
+
+.Router-Styling {
+  text-align: center;
 }
