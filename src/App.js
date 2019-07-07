@@ -6,7 +6,7 @@ import BbqTips from './BbqTips';
 import Home from './Home';
 import LoginSignup from './LoginSignup';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import { TwitterFollowButton } from 'react-twitter-embed';
 function App() {
   return (
     <div className="App">
@@ -34,6 +34,11 @@ function App() {
         <div className="App-Title">
           MEAT DEVS
         </div>
+        <div className="Twitter-Follow-Styling">
+          <TwitterFollowButton
+            screenName={'meatdevs'}
+          />
+        </div>    
         <div>
           <Route path="/" exact component={Home} />
           <Route path="/feed/" component={Feed} />
