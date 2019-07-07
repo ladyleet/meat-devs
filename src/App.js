@@ -5,7 +5,6 @@ import Feed from './Feed';
 import BbqTips from './BbqTips';
 import Home from './Home';
 import LoginSignup from './LoginSignup';
-import Newsletter from './Newsletter';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
