@@ -9,9 +9,6 @@ function Feed() {
                 url={'https://github.com/ladyleet/meat-devs'}
                 options={{ text: 'I rarely meat a site I tweet about, but it would be a missed steak if I didnt share Meat Devs!'}}
             />
-            <TwitterFollowButton
-                screenName={'meatdevs'}
-            />
             <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="meatdevs"
