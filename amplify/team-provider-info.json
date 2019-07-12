@@ -1,0 +1,19 @@
+{
+    "meatdevs": {
+        "awscloudformation": {
+            "AuthRoleName": "meat-devs-meatdevs-20190712160420-authRole",
+            "UnauthRoleArn": "arn:aws:iam::709589121319:role/meat-devs-meatdevs-20190712160420-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::709589121319:role/meat-devs-meatdevs-20190712160420-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "meat-devs-meatdevs-20190712160420-deployment",
+            "UnauthRoleName": "meat-devs-meatdevs-20190712160420-unauthRole",
+            "StackName": "meat-devs-meatdevs-20190712160420",
+            "StackId": "arn:aws:cloudformation:us-east-1:709589121319:stack/meat-devs-meatdevs-20190712160420/3c7263f0-a4e0-11e9-80c4-0a33c80c982c"
+        },
+        "categories": {
+            "auth": {
+                "meatdevsdda9c8f6": {}
+            }
+        }
+    }
+}

@@ -5,49 +5,40 @@ import Feed from './Feed';
 import BbqTips from './BbqTips';
 import Home from './Home';
 import LoginSignup from './LoginSignup';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Protected from './Protected';
+import { Router, Link } from '@reach/router'; 
 import { TwitterFollowButton } from 'react-twitter-embed';
+import Amplify, { Analytics } from 'aws-amplify';
+import awsConfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
+
+Amplify.configure(awsConfig);
+Analytics.record({ name: 'test' });
+
 function App() {
   return (
-    <div className="App">
+    <>  
+      <div className="App">
+      <div className="Router-Styling">
+        <Link to="/" className="App-Routes">Home</Link>
+        <Link to="/feed/" className="App-Routes">Feed</Link>
+        <Link to="/log/" className="App-Routes">Log</Link>
+        <Link to="/bbqtips/" className="App-Routes">BBQ Tips</Link>
+        <Link to="/login_signup/" className="App-Routes">Login/Signup</Link>
+        <Link to="/members/" className="App-Routes">Members</Link>
+        <a href="https://mailchi.mp/7fd00f8f4f23/meatdevs" className="App-Routes">Newsletter</a>
+      </div>
+      <div className="App-Title">
+        MEAT DEVS
+      </div>
       <Router>
-        <div className="Router-Styling">
-          <span className="App-Routes">
-              <Link to="/">Home</Link>
-          </span>
-          <span className="App-Routes">
-              <Link to="/feed/">Feed</Link>
-          </span>
-          <span className="App-Routes">
-              <Link to="/log/">Log</Link>
-          </span>
-          <span className="App-Routes">
-              <Link to="/bbqtips/">BBQ Tips</Link>
-          </span>
-          <span className="App-Routes">
-              <Link to="/login_signup/">Login/Signup</Link>
-          </span>
-          <span className="App-Routes">
-              <a href="https://mailchi.mp/7fd00f8f4f23/meatdevs">Newsletter</a>
-          </span>
-        </div>
-        <div className="App-Title">
-          MEAT DEVS
-        </div>
-        <div className="Twitter-Follow-Styling">
-          <TwitterFollowButton
-            screenName={'meatdevs'}
-          />
-        </div>    
-        <div>
-          <Route path="/" exact component={Home} />
-          <Route path="/feed/" component={Feed} />
-          <Route path="/log/" component={Log} />
-          <Route path="/bbqtips/" component={BbqTips} />
-          <Route path="/login_signup/" component={LoginSignup} />
-        </div>
+        <Home path="/" />
+        <Feed path="/feed/" />
+        <Log path="/log/" />
+        <Protected path="/members"/>
       </Router>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,20 @@
+{
+    "appName": "meatdevs",
+    "roleName": "pinpointLambdaRole71ade0d9",
+    "cloudWatchPolicyName": "cloudWatchPolicy71ade0d9",
+    "pinpointPolicyName": "pinpointPolicy71ade0d9",
+    "authPolicyName": "pinpoint_amplify_71ade0d9",
+    "unauthPolicyName": "pinpoint_amplify_71ade0d9",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

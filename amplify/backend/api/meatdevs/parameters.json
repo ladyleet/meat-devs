@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "meatdevs",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmeatdevsdda9c8f6",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
