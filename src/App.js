@@ -1,15 +1,20 @@
 import React from 'react';
-import './App.css';
-import Log from './Log';
-import Feed from './Feed';
-import BbqTips from './BbqTips';
-import Home from './Home';
-import LoginSignup from './LoginSignup';
+import './styles/App.css';
+import './styles/typography.css';
+import Log from './components/Log';
+import Feed from './components/Feed';
+import BbqTips from './components/BbqTips';
+import Home from './components/Home';
+import LoginSignup from './components/LoginSignup';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { TwitterFollowButton } from 'react-twitter-embed';
+
 function App() {
   return (
     <div className="App">
+      <div className="App-Title">
+        <h1>MEAT DEVS</h1>
+      </div>
       <Router>
         <div className="Router-Styling">
           <span className="App-Routes">
@@ -30,9 +35,6 @@ function App() {
           <span className="App-Routes">
               <a href="https://mailchi.mp/7fd00f8f4f23/meatdevs">Newsletter</a>
           </span>
-        </div>
-        <div className="App-Title">
-          MEAT DEVS
         </div>
         <div className="Twitter-Follow-Styling">
           <TwitterFollowButton

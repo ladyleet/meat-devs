@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap');
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(5px + 2vmin);
+  color: black;
+  flex-direction: column;
+  font-family: Avenir;
+  padding: 25px;
+  max-width: 1200px;
+  margin:0 auto;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-Title {
+  text-align: center;
+  background-size: cover;
+  background-image: url(../assets/tomahawk.jpg);
+  background-position: 50% 50%;
+  color:black;
+}
+
+.App-Routes {
+  padding: 20px;
+}
+
+.Router-Styling {
+  text-align: center;
+}
+
+.Twitter-Follow-Styling {
+  padding: 10px;
+  text-align: right;
+}
