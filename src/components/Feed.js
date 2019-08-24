@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/feed.css';
 import { TwitterTimelineEmbed, TwitterFollowButton, TwitterShareButton } from 'react-twitter-embed';
 
-function Feed() {
+const Feed = () => {
     return(
         <>
         <h2>Feed</h2>
