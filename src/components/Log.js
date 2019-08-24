@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Log() {
+const Log = () => {
     return <h2>Log</h2>;
     }
 

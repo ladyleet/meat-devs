@@ -9,7 +9,7 @@ import LoginSignup from './components/LoginSignup';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { TwitterFollowButton } from 'react-twitter-embed';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="App-Title">
