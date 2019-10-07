@@ -1,3 +1,9 @@
+WELCOME TO MEAT DEVS!
+
+We welcome any and all contributions to this fun little side project.
+
+Follow us on twitter [@meatdevs](https://twitter.com/meatdevs).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
